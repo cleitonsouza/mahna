@@ -6,14 +6,25 @@
         <meta name="description" content="Espaço Mahna Yoga e Terapias" />
         <meta name="author" content="Ana Paula Todisco" />
         <title>Espaço Mahna - Yoga e Terapias</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/mahna-scs-favicon.png" />
+        <link rel="icon" type="image/x-icon" href="./assets/img/mahna-scs-favicon.png" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="./js/fa-all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="./css/styles.css" rel="stylesheet" />
+        <!-- Global site tag (gtag.js) - Google Analytics-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-64B0XE1Y6M"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-64B0XE1Y6M');
+        </script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -29,8 +40,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#horarios">Horários</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cursos-e-eventos">Cursos e Eventos</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#terapias">Terapias</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contatos">Contatos</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#videos">Vídeos</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contato">Contato</a></li>
                 </ul>
             </div>
         </nav>
@@ -62,17 +72,24 @@
                         </h3>
                         <p>Veja os nossos horários abaixo:</p>
                         <ul>
-                            <li>Segunda: 16h, 17h50 e 19h</li>
-                            <li>Terça: 7h30, 9h e 19h30</li>
-                            <li>Quarta: 9h, 13h50, 15h10, 17h50 e 19h</li>
-                            <li>Quinta: 7h30, 9h e 19h30</li>
-                            <li>Sexta: 7h e 9h</li>
+                            <li>Segunda: 16h30, 17h50 e 19h</li>
+                            <li>Terça: 7h30, 12h, 17h30 e 19h30</li>
+                            <li>Quarta: 7h30, 9h, 14h, 17h50 e 19h</li>
+                            <li>Quinta: 7h30, 17h30 e 19h30</li>
+                            <li>Sexta: 9h</li>
+                        </ul>
+                        <br />
+                        <p>Turmas em formação:</p>
+                        <ul>
+                            <li>Segunda: 20h15</li>
+                            <li>Terça: 9h e 16h</li>
+                            <li>Quinta: 9h e 16h</li>
                         </ul>
                         <p class="text-primary">As aulas acontecem presencialmente e on-line, simultaneamente.</p>
                         <h3>
-                            Não fique triste caso se um desses horários não se encaixa na sua agenda.
+                            Não fique triste caso esses horários não sejam adequados à sua rotina.
                             <br />
-                            Oferecemos vídeo aulas para adaptar a prática ao seus horários, fale com a gente!
+                            Entre em contato com a gente para verificarmos a possibilidade de abrir uma nova turma.
                         </h3>
                     </div>
                 </div>
@@ -83,11 +100,13 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Cursos e Eventos</h2>
                     <div class="container">
-                        <div class="card m-2" style="width: 16rem">
-                            <img class="card-img-top" src="http://www.espacomahna.com.br/img/img_insta_pqn.jpg" />
+                        <div class="card m-0 card-terapias">
+                            <img class="card-img-top" src="./assets/img/eventos/retiro-silencio.jpeg" />
                             <div class="card-body">
-                                <p class="card-text">Estamos preparando encontros bem acolhedores. Acompanhe por aqui ou em nosso Instagram</p>
-                                <a class="btn btn-primary" target="_blank" href="https://www.instagram.com/espacomahna_abc/">Clique Aqui</a>
+                                <h3 class="card-title">Retiro do Silêncio</h3>
+                                <p class="card-text">22 a 24 de março, em Mairinque/SP</p>
+                                <a class="btn btn-secondary" target="_blank" href="https://www.instagram.com/p/C2ciNx9OUpY/">Saiba mais</a>
+                                <a class="btn btn-primary" target="_blank" href="https://api.whatsapp.com/send?phone=5511930319130&amp;text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Retiro%20do%20Sil%C3%AAncio.">Inscreva-se</a>
                             </div>
                         </div>
                     </div>
@@ -116,7 +135,7 @@
                         </li>
                         <li class="openModal" data-slug="drenagem-linfatica" data-toggle="modal" data-target="#modal">
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Drenagem linfática
+                            Drenagem Linfática
                         </li>
                         <li class="openModal" data-slug="florais-de-bach" data-toggle="modal" data-target="#modal">
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -124,7 +143,7 @@
                         </li>
                         <li class="openModal" data-slug="massagem-ayurvedica" data-toggle="modal" data-target="#modal">
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Massagem ayurvédica
+                            Massagem Ayurvédica
                         </li>
                         <li class="openModal" data-slug="massagem-lomi-lomi" data-toggle="modal" data-target="#modal">
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -132,11 +151,11 @@
                         </li>
                         <li class="openModal" data-slug="massagem-modeladora" data-toggle="modal" data-target="#modal">
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Massagem modeladora
+                            Massagem Modeladora
                         </li>
                         <li class="openModal" data-slug="massagem-relaxante" data-toggle="modal" data-target="#modal">
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Massagem relaxante
+                            Massagem Relaxante
                         </li>
                         <li class="openModal" data-slug="moxaterapia" data-toggle="modal" data-target="#modal">
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -153,10 +172,6 @@
                         <li class="openModal" data-slug="shiatsu" data-toggle="modal" data-target="#modal">
                             <span class="fa-li"><i class="fas fa-check"></i></span>
                             Shiatsu
-                        </li>
-                        <li class="openModal" data-slug="shiatsu-facial" data-toggle="modal" data-target="#modal">
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Shiatsu Facial
                         </li>
                         <li class="openModal" data-slug="thai-massagem" data-toggle="modal" data-target="#modal">
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -179,47 +194,41 @@
                                     <h5 class="modal-title" id="modalLabel">Título</h5>
                                     <i class="fas fa-close close" data-dismiss="modal" style="cursor: pointer"></i>
                                 </div>
-                                <div class="modal-body"><p id="modalDescription">Descrição</p></div>
+                                <div class="modal-body">
+                                    <img class="img-fluid mb-3" id="modalImage" title="" alt="" src="./assets/img/terapias/acupuntura.jpg" />
+                                    <p id="modalDescription">Descrição</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Contatos-->
-            <section class="resume-section" id="contatos">
+            <!-- Contato-->
+            <section class="resume-section" id="contato">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Contatos</h2>
+                    <h2 class="mb-5">Contato</h2>
                     <div class="subheading my-5">
                         <span class="text-primary">Espaço Mahna ABC</span>
                         - Rua Território do Acre, 13 - Olímpico - São Caetano do Sul - SP
                     </div>
-                    <p class="lead mb-5">Conheça o nosso local de prática e a nossas redes sociais</p>
+                    <p class="lead mb-5">Conheça o nosso local de prática e a nossas redes sociais:</p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.facebook.com/espacomahnascs/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-icon" href="https://www.instagram.com/espacomahna_abc/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="social-icon" href="https://www.instagram.com/mahnayoga_scs/" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a class="social-icon" href="https://g.page/espacomahnaabc" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
                         <a class="social-icon" href="mailto:espacomahna@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
                         <a class="social-icon" href="http://bit.ly/3ai4Gdk" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        <a class="social-icon" href="https://t.me/espacomahna" target="_blank"><i class="fab fa-telegram"></i></a>
                         <a class="social-icon" href="https://bit.ly/youtubeespacomahna" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
-            <!-- Vídeos-->
-            <section class="resume-section" id="videos">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Vídeos</h2>
-                    <div class="row"><iframe style="margin-left: 15px" width="560" height="315" src="https://www.youtube.com/embed/_okJ04cKP60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-                </div>
-            </section>
         </div>
         <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
         <!-- jQuery & Popper-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="./js/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="./js/scripts.js"></script>
     </body>
 </html>

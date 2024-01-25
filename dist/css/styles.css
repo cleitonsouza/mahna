@@ -10970,3 +10970,15 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+.card-terapias {
+  max-width: 100%;
+  width: 400px;
+}
+.card-terapias .btn {
+  color: #fff;
+}
+
+.openModal {
+  cursor: pointer;
+  line-height: 28px;
+}

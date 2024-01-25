@@ -2,7 +2,6 @@ doctype html
 html(lang='pt-BR')
 
     head
-
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='Espaço Mahna Yoga e Terapias')
@@ -10,17 +9,26 @@ html(lang='pt-BR')
 
         title Espaço Mahna - Yoga e Terapias
 
-        link(rel='icon', type='image/x-icon', href='assets/img/mahna-scs-favicon.png')
+        link(rel='icon', type='image/x-icon', href='./assets/img/mahna-scs-favicon.png')
 
         // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
+        script(src='./js/fa-all.js', crossorigin='anonymous')
 
         // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i', rel='stylesheet', type='text/css')
 
         // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
+        link(href='./css/styles.css', rel='stylesheet')
+
+        // Global site tag (gtag.js) - Google Analytics
+        script(async, src="https://www.googletagmanager.com/gtag/js?id=G-64B0XE1Y6M")
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-64B0XE1Y6M');
 
     body#page-top
 
@@ -43,9 +51,7 @@ html(lang='pt-BR')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#terapias') Terapias
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#contatos') Contatos
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#videos') Vídeos
+                        a.nav-link.js-scroll-trigger(href='#contato') Contato
 
         // Page Content
         .container-fluid.p-0
@@ -76,18 +82,26 @@ html(lang='pt-BR')
 
                         p Veja os nossos horários abaixo:
                         ul
-                            li Segunda: 16h, 17h50 e 19h
-                            li Terça: 7h30, 9h e 19h30
-                            li Quarta: 9h, 13h50, 15h10, 17h50 e 19h
-                            li Quinta: 7h30, 9h e 19h30
-                            li Sexta: 7h e 9h
+                            li Segunda: 16h30, 17h50 e 19h
+                            li Terça: 7h30, 12h, 17h30 e 19h30
+                            li Quarta: 7h30, 9h, 14h, 17h50 e 19h
+                            li Quinta: 7h30, 17h30 e 19h30
+                            li Sexta: 9h
+
+                        br
+
+                        p Turmas em formação:
+                        ul
+                            li Segunda: 20h15
+                            li Terça: 9h e 16h
+                            li Quinta: 9h e 16h
 
                         p.text-primary As aulas acontecem presencialmente e on-line, simultaneamente.
 
                         h3
-                            | Não fique triste caso se um desses horários não se encaixa na sua agenda.
+                            | Não fique triste caso esses horários não sejam adequados à sua rotina.
                             br
-                            | Oferecemos vídeo aulas para adaptar a prática ao seus horários, fale com a gente!
+                            | Entre em contato com a gente para verificarmos a possibilidade de abrir uma nova turma.
 
 
             hr.m-0
@@ -98,13 +112,17 @@ html(lang='pt-BR')
                     h2.mb-5 Cursos e Eventos
 
                     .container
-                        .card.m-2(style="width: 16rem")
-                            img.card-img-top(src="http://www.espacomahna.com.br/img/img_insta_pqn.jpg")
+                        .card.m-0.card-terapias
+                            img.card-img-top(src="./assets/img/eventos/retiro-silencio.jpeg")
                             .card-body
+                                h3.card-title
+                                    | Retiro do Silêncio
                                 p.card-text
-                                    | Estamos preparando encontros bem acolhedores. Acompanhe por aqui ou em nosso Instagram
-                                a.btn.btn-primary(target="_blank", href="https://www.instagram.com/espacomahna_abc/")
-                                    | Clique Aqui
+                                    | 22 a 24 de março, em Mairinque/SP
+                                a.btn.btn-secondary(target="_blank", href="https://www.instagram.com/p/C2ciNx9OUpY/")
+                                    | Saiba mais
+                                a.btn.btn-primary(target="_blank", href="https://api.whatsapp.com/send?phone=5511930319130&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Retiro%20do%20Sil%C3%AAncio.")
+                                    | Inscreva-se
 
             hr.m-0
 
@@ -131,7 +149,7 @@ html(lang='pt-BR')
                         li.openModal(data-slug="drenagem-linfatica", data-toggle="modal", data-target="#modal")
                             span.fa-li
                                 i.fas.fa-check
-                            | Drenagem linfática
+                            | Drenagem Linfática
                         li.openModal(data-slug="florais-de-bach", data-toggle="modal", data-target="#modal")
                             span.fa-li
                                 i.fas.fa-check
@@ -139,7 +157,7 @@ html(lang='pt-BR')
                         li.openModal(data-slug="massagem-ayurvedica", data-toggle="modal", data-target="#modal")
                             span.fa-li
                                 i.fas.fa-check
-                            | Massagem ayurvédica
+                            | Massagem Ayurvédica
                         li.openModal(data-slug="massagem-lomi-lomi", data-toggle="modal", data-target="#modal")
                             span.fa-li
                                 i.fas.fa-check
@@ -147,11 +165,11 @@ html(lang='pt-BR')
                         li.openModal(data-slug="massagem-modeladora", data-toggle="modal", data-target="#modal")
                             span.fa-li
                                 i.fas.fa-check
-                            | Massagem modeladora
+                            | Massagem Modeladora
                         li.openModal(data-slug="massagem-relaxante", data-toggle="modal", data-target="#modal")
                             span.fa-li
                                 i.fas.fa-check
-                            | Massagem relaxante
+                            | Massagem Relaxante
                         li.openModal(data-slug="moxaterapia", data-toggle="modal", data-target="#modal")
                             span.fa-li
                                 i.fas.fa-check
@@ -168,10 +186,6 @@ html(lang='pt-BR')
                             span.fa-li
                                 i.fas.fa-check
                             | Shiatsu
-                        li.openModal(data-slug="shiatsu-facial", data-toggle="modal", data-target="#modal")
-                            span.fa-li
-                                i.fas.fa-check
-                            | Shiatsu Facial
                         li.openModal(data-slug="thai-massagem", data-toggle="modal", data-target="#modal")
                             span.fa-li
                                 i.fas.fa-check
@@ -193,27 +207,28 @@ html(lang='pt-BR')
                                     h5#modalLabel.modal-title Título
                                     i.fas.fa-close.close(data-dismiss="modal", style="cursor: pointer")
                                 .modal-body
+                                    img#modalImage.img-fluid.mb-3(title="", alt="", src="./assets/img/terapias/acupuntura.jpg")
                                     p#modalDescription Descrição
 
 
             hr.m-0
 
-            // Contatos
-            section#contatos.resume-section
+            // Contato
+            section#contato.resume-section
                 .resume-section-content
-                    h2.mb-5 Contatos
+                    h2.mb-5 Contato
 
                     div.subheading.my-5
                         span.text-primary Espaço Mahna ABC
                         | - Rua Território do Acre, 13 - Olímpico - São Caetano do Sul - SP
 
                     p.lead.mb-5
-                        | Conheça o nosso local de prática e a nossas redes sociais
+                        | Conheça o nosso local de prática e a nossas redes sociais:
 
                     .social-icons
                         a.social-icon(href="https://www.facebook.com/espacomahnascs/" target="_blank")
                             i.fab.fa-facebook-f
-                        a.social-icon(href="https://www.instagram.com/espacomahna_abc/" target="_blank")
+                        a.social-icon(href="https://www.instagram.com/mahnayoga_scs/" target="_blank")
                             i.fab.fa-instagram
                         a.social-icon(href="https://g.page/espacomahnaabc" target="_blank")
                             i.fas.fa-map-marker-alt
@@ -221,27 +236,15 @@ html(lang='pt-BR')
                             i.fas.fa-envelope
                         a.social-icon(href="http://bit.ly/3ai4Gdk" target="_blank")
                             i.fab.fa-whatsapp
-                        a.social-icon(href="https://t.me/espacomahna" target="_blank")
-                            i.fab.fa-telegram
                         a.social-icon(href="https://bit.ly/youtubeespacomahna" target="_blank")
                             i.fab.fa-youtube
 
-            hr.m-0
-
-            // Vídeos
-            section#videos.resume-section
-                .resume-section-content
-                    h2.mb-5 Vídeos
-
-                    div.row                    
-                        iframe(style="margin-left:15px;" width="560" height="315" src="https://www.youtube.com/embed/_okJ04cKP60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
-
         // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+        script(src='./js/bootstrap.bundle.min.js')
 
         // jQuery & Popper
-        script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js", integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", crossorigin="anonymous")
+        script(src="./js/jquery-3.3.1.slim.min.js", crossorigin="anonymous")
         //- script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js", integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", crossorigin="anonymous")
 
         // Core theme JS
-        script(src='js/scripts.js')
+        script(src='./js/scripts.js')
